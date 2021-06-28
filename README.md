@@ -1,3 +1,46 @@
+# Thuật ngữ python
+
+### hàm
+#### khác nhau giữa tham biến và đối số:
+Các tham số được xác định bởi các tên xuất hiện trong một định nghĩa hàm, trong khi các đối số là các giá trị thực sự được truyền cho một hàm khi gọi nó. Các tham số xác định loại đối số nào mà một hàm có thể chấp nhận. Ví dụ, với định nghĩa hàm:
+``` python
+def abc(a,b,c):
+    pass
+
+abc(10,20,30)
+```
+Khi đó a , b, c là tham số . 10 ,20 ,30 là đối số
+
+
+Tham biến(tham số) có hai phương pháp:
+-  đối số từ khóa : đối số đứng trước một số nhận dạng (ví dụ name=) trong một lệnh gọi hàm hoặc được chuyển dưới dạng giá trị trong từ điển đứng trước **.
+``` python
+complex(real=3, imag=5)
+complex(**{'real': 3, 'imag': 5})
+```
+- đối số vị trí : đối số không phải là đối số từ khóa. Các đối số vị trí có thể xuất hiện ở đầu danh sách đối số và hoặc được chuyển dưới dạng các phần tử của một đối số có thể lặp lại trước *
+``` python
+complex(3, 5)
+complex(*(3, 5))
+```
+
+### thuộc tính
+Một giá trị được liên kết với một đối tượng được tham chiếu bằng tên bằng cách sử dụng các biểu thức dấu chấm. Ví dụ: nếu một đối tượng o có thuộc tính a thì nó sẽ được tham chiếu là o.a
+
+### biến lớp
+
+Một biến được định nghĩa trong một lớp và chỉ được sửa đổi ở cấp lớp (tức là không phải trong một thể hiện của lớp).
+
+``` python
+class test:
+    def __init__(self):
+        self.mang = []
+        
+``` 
+Như vậy biến mang bây giờ chỉ đc sử dụng trong class test giống biến cục bộ
+
+
+
 Làm lun bài hồi tối đi rồi làm bài này
 
 # dictionary
