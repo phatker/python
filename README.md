@@ -164,6 +164,43 @@ print(search_profile_with_better_score(students, 8))
 ```
 Kết quả là: 
 > ['Lan', 'Mai']
+
+Bài 3
+yêu cầu hiện thực hàm sort_profile_high_to_low với 1 tham số:
+
+students: là mảng chứa các từ điển, mỗi từ điển lưu thông tin của một bạn thực tập sinh:
+“name”: tên của thực tập sinh
+“score”: điểm môn tin học
+Hàm sort_profile_high_to_low trả về một mảng chứa tên của các bạn thực tập sinh sắp xếp theo thứ tự điểm từ cao đến thấp 
+
+Gợi ý:
+
+Dùng một mảng tên “result” để lưu danh sách các bạn được sắp xếp điểm từ cao xuống thấp
+Tìm bạn có điểm số cao nhất trong mảng students, thêm tên bạn vào danh sách “result” bằng hàm append()
+Xoá bạn có điểm số cao nhất đó ra khỏi mảng “students” bằng lệnh “remove()”
+Tiếp tục tìm bạn có điểm số cao nhất tiếp theo trong mảng “students"
+Lặp lại cho đến khi mảng “students” không còn phần tử nào cả thì dừng lại (dùng câu lệnh ‘while’ để kiểm tra xem students có phải là mảng rỗng hay không)
+Ví dụ:
+
+Danh sách thực tập sinh cùng với điểm
+``` python
+students = [
+
+{'name': 'Hoa', 'score': 6}, 
+
+{'name': 'Lan', 'score': 10},
+
+{'name': 'Mai', 'score': 9},
+
+{'name': 'Hong', 'score': 11},
+
+{'name': 'Dao', 'score': 8},
+
+]
+
+print(sort_profile_high_to_low(students))
+```
+Kết quả là: [‘Hong’, ‘Lan’, 'Mai', ‘Dao’, ‘Hoa’]
 ### k biết ib anh giải thích
 
 ## bản quyền
