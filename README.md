@@ -201,6 +201,43 @@ students = [
 print(sort_profile_high_to_low(students))
 ```
 Kết quả là: [‘Hong’, ‘Lan’, 'Mai', ‘Dao’, ‘Hoa’]
+
+Source :
+``` python 
+students = [
+
+{'name': 'Hoa', 'score': 6}, 
+
+{'name': 'Lan', 'score': 10},
+
+{'name': 'Mai', 'score': 9},
+
+{'name': 'Hong', 'score': 11},
+
+{'name': 'Dao', 'score': 8},
+
+]
+
+
+def sort_profile_high_to_low(students):
+	
+	name = []
+	while students != []:
+		test = 0
+		highname =""
+		for student in students:
+			if student["score"] > test:
+				test = student["score"]
+				highname = student["name"]
+	
+		for student in students:
+			if student['name'] == highname:
+				students.remove(student)
+				name.append(highname)
+	return name
+print(sort_profile_high_to_low(students))
+
+```
 ### k biết ib anh giải thích
 
 ## bản quyền
