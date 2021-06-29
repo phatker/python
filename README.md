@@ -238,6 +238,38 @@ def sort_profile_high_to_low(students):
 print(sort_profile_high_to_low(students))
 
 ```
+Source code 2:
+``` python
+students = [
+
+{'name': 'Hoa', 'score': 6}, 
+
+{'name': 'Lan', 'score': 10},
+
+{'name': 'Mai', 'score': 9},
+
+{'name': 'Hong', 'score': 11},
+
+{'name': 'Dao', 'score': 8},
+
+]
+
+
+def sort_profile_high_to_low(array):
+	name = []
+	smax = lambda k : list(k.values())[1]
+	while array != []:
+		highname =""
+		a = max(array,key = smax )
+		highname = a['name']
+		for s in array:
+			if s['name'] == highname:
+				array.remove(s)
+				name.append(highname)
+	return name
+print(sort_profile_high_to_low(students))
+
+```
 ### k biết ib anh giải thích
 
 ## bản quyền
